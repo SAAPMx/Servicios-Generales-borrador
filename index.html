@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Solicitud de Servicios</title>
+
+     <!--Vinculación con el archivo normalize.css-->
+     <link rel="preload" href="css/normalize.css" as="style" >
+     <link rel="stylesheet" href="css/normalize.css"> <!--Por su importancia, debe ser el primer archivo en cargar-->
+     
+     
+    <!--Enlace para la API de Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="/img/logo3.png"> <!--ÍCONO DE LA PÁGINA-->
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='index.js'></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/flatly/bootstrap.min.css" integrity="sha384-qF/QmIAj5ZaYFAeQcrQ6bfVMAh4zZlrGwTPY7T/M+iTTLJqJBJjwwnsE5Y0mV7QK" crossorigin="anonymous"> 
+    <!--Es importante tener declaradas las librerías antes de declarar en enlace con una hoja de estilos externa-->
+    
+
+    <!--Vinculación del HTML a la hoja de estilos-->
+    <link rel="preload" href="css/styles.css" as="style" >
+    <link href="css/styles.css" rel="stylesheet">
+    <!--La hoja de estilos personalizada debe ser la última en agregarse-->
+
+
+    
+    <!-- ........................................................................ 
+        SERÁ PARA EL USO PÚBLICO DE LAS DIFERENTES HERRAMIENTAS Y SERVICIOS QUE OFRECE
+        EL ÁREA DE Servicios Generales-->
+
+    <!--Proyecto hecho con BEM y Bootswatch-->
+</head>
+
+<!-- ----------------------------------------------------------------------------- -->
+<body>
+    <header class="header" >
+        
+        <!--NAVEGACIÓN-->
+        <div class="nav-bg ">
+            <nav class="navegacion-principal contenedor"> <!--Se pueden poner varias clases separadas por espacios-->
+                <a href="mailto:mx_operaciones@up.edu.mx">Contactar</a>
+                <a class="nav-activo"  href="index.html">Servicios</a>
+                <a href="mensajeria.html">Mensajería</a>
+                <a href="login.html">Iniciar sesión</a>
+            </nav>
+
+        </div>
+
+        <!-- CONTENIDO  -->
+        <section class="hero"> <!-- La imagen se coloca desde la clase hero-->
+            <div class="logo_titulo">
+
+                <section class="contenido-hero">
+                    <h1>Área de Servicios Generales</h1> 
+                    <h2 class="separar-encimados bienvenido">Universidad Panamericana</h2> 
+                    <!-- Debe tener un sección que lo rodee porque marca un nuevo contenido --> 
+                </section>
+
+                <section>
+                    <!--<img src="/img/logo3.png" alt="Logo UP" class="logo_up" >  -->
+                </section>
+                
+            </div>
+        </section>
+
+    </header>  <!-- FIN DEL HEADER -->
+    
+
+    <!--  INICIO DE CONTENIDO --------------------------------------------------- -->
+    <a name="servicios"></a>  <!--Conexión con el botón de Servicios en el Index-->
+    <main class="contenedor sombra" >
+        <main class="contenedor contenedor2">
+            <h2> Solicitud de Servicios</h2>
+        </main>
+
+                   <!--FORMULARIO PARA REPORTE  -->
+                    <!-- ADD TASK  -->
+                    <div class="container p-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <form id="task-form" class="formulario">
+                                    <!-- <label for="title">Seleccione un Servicio:</label> -->
+                                    <select id="task-title" autofocus trequired>
+                                        <option disabled selected> --Seleccione un Servicio-- </option>
+                                        <option value="Intendencia">Apoyo de Intedencia</option>
+                                        <option value="Material Didáctico">Apoyo de Material Didáctico</option>
+                                        <option value="Movimientos">Apoyo para Movimiento de mobiliario</option>
+                                        <option value="Movimientos">Apoyo para Movimiento de cajas</option>
+                                        <option value="Mantenimiento">Apoyo de Mantenimiento</option>
+                                        <option value="Cerrajería">Apoyo de Cerrajería</option>
+                                    </select>
+                                    
+                                    <label for="description" class="separar-encimados">Descripción:</label>
+                                    <textarea
+                                        id="task-description"
+                                        rows="1"
+                                        class="form-control mb-3 servicio__textarea"
+                                        placeholder="Cuéntenos detalladamente qué sucede"
+                                        required
+                                        
+                                    ></textarea>
+
+                                    <label for="location">Ubicación:</label>
+                                    <input 
+                                        type="text"
+                                        id="task-location"
+                                        class="form-control mb-3 servicio__textarea"
+                                        placeholder="Dónde se necesita del servicio (ej. Ingeniería 3er piso, oficina 3)"
+                                        required
+                                    />
+
+                                    <label for="contact">Contacto:</label>
+                                    <input 
+                                        type="text"
+                                        id="task-contact"
+                                        class="form-control mb-3 servicio__textarea"
+                                        placeholder="Nombre Completo"
+                                        required
+                                    />
+
+                                    <label for="contact">Correo:</label>
+                                    <input 
+                                        type="mail"
+                                        id="task-mail"
+                                        class="form-control mb-3 servicio__textarea"
+                                        placeholder="Escriba su Correo Institucional"
+                                        required
+                                    />
+
+                                    <label >Fotografía (Opcional):</label>
+                                    <input 
+                                        type="file"
+                                        id="task-photo"
+                                        class=" mb-3 servicio__textarea"
+                                        accept=""
+                                        multiple
+                                    />
+                    
+                                    <button class="boton" id="btn-task-form" >
+                                        Enviar
+                                    </button>
+  
+                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+            </section> <!--FIN DE "SERVICIOS"-->
+        
+    </main>
+
+    
+    <!-- CUSTOM CODE -->
+    <script src="./index.js" type="module"></script>
+
+</body>
+
+<!-- <script type='text/javascript'> 
+    document.oncontextmenu = function(){return false} 
+</script> -->
+
+<footer class="footer">
+    <p class="footer__texto">
+        Servicios Generales  |  Derechos Reservados 2022  |  Universidad Panamericana
+    </p>
+</footer>
+
+</html>

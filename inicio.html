@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Servicios Generales</title>
+
+    <!--Vinculación con el archivo normalize.css-->
+    <link rel="preload" href="css/normalize.css" as="style" >
+    <link rel="stylesheet" href="css/normalize.css"> <!--Por su importancia, debe ser el primer archivo en cargar-->
+    
+   <!--Enlace para la API de Google Fonts-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+   <script src='inicio.js' type="module"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+   <meta name='viewport' content='width=device-width, initial-scale=1'>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/flatly/bootstrap.min.css" integrity="sha384-qF/QmIAj5ZaYFAeQcrQ6bfVMAh4zZlrGwTPY7T/M+iTTLJqJBJjwwnsE5Y0mV7QK" crossorigin="anonymous">
+   <!--Es importante tener declaradas las librerías antes de declarar en enlace con una hoja de estilos externa-->
+   
+   <link rel="icon" href="/img/logo3.png"> <!--ÍCONO DE LA PÁGINA-->
+
+   <!--Vinculación del HTML a la hoja de estilos-->
+   <link rel="preload" href="css/styles.css" as="style" >
+   <link href="css/styles.css" rel="stylesheet">
+   <!--La hoja de estilos personalizada debe ser la última en agregarse-->
+
+</head>
+<body>
+    <header class="header" >
+        
+        <!--NAVEGACIÓN-->
+        <div class="nav-bg">
+            <nav class="navegacion-principal contenedor"> <!--Se pueden poner varias clases separadas por espacios-->
+                <a class="nav-activo"  href="inicio.html">Inicio</a>
+                <a href="index.html">Servicios</a>
+                <a href="mensajeria.html">Mensajería</a>
+                <a href="login.html">Iniciar sesión</a>
+            </nav>
+        </div>
+        <!-- CONTENIDO  -->
+        <!-- <section class="hero"> 
+            <div class="contenido-hero">
+                <h1>Inicio</h1> <h3 class="separar-encimados">¡Próximamente!</h3> 
+                <a class="boton" href= "index.html">Levantar Solicitud</a>
+            </div>
+        </section> -->
+
+
+        <!-- SLIDER -->
+        <section class="slider-container">
+            <div class="slider-content">
+                <p>¡Bienvenidos!</p>
+            </div>
+            <div class="slider-content">
+                <p>Hacia una Transformación digital</p>
+            </div>
+            <div class="slider-content">
+                <p>Una misma visión</p>
+            </div>
+            <div class="slider-content">
+                <p>Área de Servicios Generales</p>
+            </div>
+        </section>
+
+    </header>  <!-- END HEADER -->
+
+
+    <main class="contenedor sombra separar-elementos" > <!--INICIA CONTENIDO-->
+        <main class="contenedor contenedor2">
+            <h2><strong>¡La nueva forma de hacer solicitudes!</strong> </h2>
+        </main>
+
+        <section class="separar-debajo">
+            <div class= "servicio"><!--Tercera sección del GRID 1 / 2-->
+                <!-- <h3 class="separar-encimados contenedor-h3"> <strong>¡La nueva forma de hacer solicitudes!</strong> </h3> -->
+                <h3 class="servicio__texto separar-encimados contenedor-h3">
+                    Responda el siguiente formulario para hacer una nueva solicitud.
+                </h3>
+                <h3 class="servicio__texto s contenedor-h3">
+                    Cualquier noticia llegará a su correo.
+                </h3>
+            </div>
+        </section>
+
+        <hr size="2px" class="linea"> <!--LÍNEA SEPARADORA-->
+
+        <section class="servicios">
+            <div class="servicio">
+                <div class="vertical-centrar">
+                    <h3 class="separar-encimados contenedor-h3">
+                        Soy Colaborador y quiero 
+                    </h3>
+                    <a class="boton-inicio" href="index.html">Levantar una Solicitud</a>
+                </div>
+
+            </div>
+
+            <div class="servicio">
+                <div class="vertical-centrar">
+                    <h3 class="separar-encimados contenedor-h3">
+                        Soy Colaborador y requiero 
+                    </h3>
+                    <a class="boton-inicio" href="mensajeria.html">Servicio de Mensajería</a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+            
+
+
+    
+</body>
+
+<script src='inicio.js' type="module"></script>
+
+<footer class="footer">
+    <p class="footer__texto">
+        Servicios Generales  |  Derechos Reservados 2022  |  Universidad Panamericana
+    </p>
+</footer>
+
+</html>
