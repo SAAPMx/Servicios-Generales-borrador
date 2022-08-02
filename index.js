@@ -24,8 +24,8 @@ taskForm.addEventListener("submit", async (e) => {  //AGREGAR NUEVAS ENTRADAS
   const contact = taskForm["task-contact"];
   const mail = taskForm["task-mail"]
   const timestamp = Date.now();
-  const fecha = new Date(timestamp);
-
+  let fecha = (new Date(timestamp)).toString( );
+  
   const photo = taskForm["task-photo"];
 
 

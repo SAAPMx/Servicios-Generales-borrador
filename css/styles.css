@@ -62,9 +62,6 @@ body{
   align-items: center; /*Alineación horizontal*/
   justify-content: center; /*alineación vertical: Lo centra verticalmente*/
 }  
-.linea{
-  color: var(--rojo-up);
-}
 
 
       /*TIPOGRAFÍA --------------------------------------------- */
